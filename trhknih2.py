@@ -4,11 +4,7 @@ from bs4 import BeautifulSoup, Comment
 from typing import Union, Optional
 from urllib.parse import urljoin, urlencode
 
-from classes.query import Query
-from classes.record import Record
-
 class TrhknihScraper:
-    NL = '\n'
     COMMENT_TEXT = "Last page link"
     WEB_URL = "https://www.trhknih.cz"
     SEARCH_ENDPOINT = "/hledat"
